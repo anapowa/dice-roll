@@ -9,7 +9,7 @@ let roll = function(n) {
 let thousandRolls = function() {
     let count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     // roll (count)
-    let output=0
+    // let output=0
     for (let i=0; i<1000; i++) {
         if (i<1000) {
             let dieRoll1 = Math.floor((Math.random() * 6) + 1)
@@ -19,20 +19,24 @@ let thousandRolls = function() {
             // roll("die#2: " + dieRoll2);
             // roll("Roll# " +i + ": " + diceRoll)
         console.log("Roll# " +i + ": " + diceRoll)
-        output= output + diceRoll + ","
+        // output= output + diceRoll + ","
         count[diceRoll] = count[diceRoll] + 1;
         }
+        // count = count[i]
         // tArray = output.split(",")
         // console.log(output)
     }
+    console.log(count)
 
     for (let i=0; i<=count.length-1; i++){
-        roll(i + ": " + count[i])
+        roll(i + ": " + count[i]);
     }
+    // barLength=count[i]
+    // document.getElementById("dieRoll").style.width=barLength
+
 }
 
 thousandRolls()
-
 
 
 
