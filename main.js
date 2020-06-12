@@ -6,9 +6,8 @@ let roll = function(n) {
     document.getElementById("dieRoll").appendChild(randomNumElement)
 }
 
-let thousandRolls = function() {
+// let thousandRolls = function() {
     let count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-    // roll (count)
     // let output=0
     for (let i=0; i<1000; i++) {
         if (i<1000) {
@@ -29,14 +28,15 @@ let thousandRolls = function() {
     console.log(count)
 
     for (let i=0; i<=count.length-1; i++){
-        roll(i + ": " + count[i]);
+        let barLength=count[i];
+        console.log(barLength)
+        roll(i + ": " + barLength);
+        document.getElementById("dieRoll").style.width= barLength + "px";
     }
-    // barLength=count[i]
-    // document.getElementById("dieRoll").style.width=barLength
+    
+// }
 
-}
-
-thousandRolls()
+// thousandRolls()
 
 
 
