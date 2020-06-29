@@ -1,7 +1,7 @@
 
 let randomNumElement
 let roll = function(n) {
-    randomNumElement = document.createElement("p")
+    randomNumElement = document.createElement("span")
     let textNodeP = document.createTextNode(n)
     randomNumElement.appendChild(textNodeP)
     document.getElementById("dieRoll").appendChild(randomNumElement)
@@ -26,7 +26,8 @@ let roll = function(n) {
     for (let i=0; i<=count.length-1; i++){
         let barLength=count[i];
         console.log(barLength)
-        roll(i + ": " + barLength);
+        roll("Dice Roll total: " +i)
+        roll(barLength);
         randomNumElement.style.width= barLength + "px";
     }
     

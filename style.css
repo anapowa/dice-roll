@@ -9,69 +9,46 @@ h1 {
     font-family: 'Helvetica Neue';
 }
 
-h1::after {content: " 🎲🎲";}
+h1::after {content: " 🎲🎲🎲";}
 
-h1::before {content: "🎲🎲 ";}
+h1::before {content: "🎲🎲🎲 ";}
 
 #dieRoll {
     color: maroon;
     display: flex; 
     flex-direction: column;
-    margin-left: 50%;
+    /* margin-left: auto; */
+    margin-right: -50%;
     margin-bottom: 50%;
+    /* display: inline-block; */
+
 }
 
-p:nth-child(1) {
-    display: none;
+span:nth-child(odd){
+background-color: orange;
 }
 
-p:nth-child(2) {
-    display: none
-}
-
-p:nth-child(3) {
-    background-color: rosybrown;
-}
-
-p:nth-child(4) {
+span:nth-child(even) {
     background-color: rosybrown;
     
 }
 
-p:nth-child(5) {
-    background-color: rosybrown;
+span:nth-child(1) {
+    display: none;
 }
 
-p:nth-child(6) {
-    background-color: rosybrown;
+span:nth-child(2) {
+    display: none
 }
 
-p:nth-child(7) {
-    background-color: rosybrown;
+span:nth-child(3) {
+    display: none
+
 }
 
-p:nth-child(8) {
-    background-color: rosybrown;
-}
+span:nth-child(4) {
+    display: none
 
-p:nth-child(9) {
-    background-color: rosybrown;
-}
-
-p:nth-child(10) {
-    background-color: rosybrown; 
-}
-
-p:nth-child(11) {
-    background-color: rosybrown;
-}
-
-p:nth-child(12) {
-    background-color: rosybrown;
-}
-
-p:nth-child(13) {
-    background-color: rosybrown;
 }
 
 #barLength {
